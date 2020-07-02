@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <mc-button>按钮</mc-button>
+    <mc-button>按钮测试</mc-button>
   </div>
 </template>
 
