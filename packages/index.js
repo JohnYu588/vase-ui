@@ -1,23 +1,31 @@
 import Button from "./button";
+import VKeepAliveChain from "./keep-alive-chain";
 
 import "./fonts/font.scss";
 // 存储组件列表
 const components = [Button];
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
-const install = function(Vue) {
+const install = function(Vue, options = { key: "", router: {} }) {
+  const { key = "cacheTo", router } = options;
   // 遍历注册全局组件
-  components.forEach(component => {
-    Vue.component(component.name, component);
+  components.forEach(function(item) {
+    if (item.install) {
+      Vue.use(item);
+    } else if (item.name) {
+      Vue.component(item.name, item);
+    }
   });
+  Vue.use(VKeepAliveChain, { key, router });
 };
 
 // 判断是否是直接引入文件
 if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
+export { Button, VKeepAliveChain };
 export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
-  install,
-  Button
+  version: "0.2.8",
+  install
 };
