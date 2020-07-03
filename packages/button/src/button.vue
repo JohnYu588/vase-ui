@@ -1,10 +1,11 @@
 <template>
   <button
-    class="mc-button"
+    class="vs-button"
     :disabled="disabled"
     @click="handleClick"
     :class="[
-      `mc-button--${type}`,
+      type ? `vs-button--${type}` : '',
+      buttonSize ? `vs-button--${buttonSize}` : '',
       {
         'is-plain': plain,
         'is-round': round,
@@ -20,8 +21,9 @@
 </template>
 <script>
 export default {
-  name: "McButton",
+  name: "VsButton",
   props: {
+    size: String,
     type: {
       type: String,
       default: "default"
@@ -55,7 +57,7 @@ export default {
 };
 </script>
 <style lang="scss">
-.mc-button {
+.vs-button {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;
@@ -213,7 +215,7 @@ export default {
     padding: 12px;
   }
 }
-.mc-button [class*="mc-icon-"] + span {
+.vs-button [class*="vs-icon-"] + span {
   margin-left: 5px;
 }
 </style>

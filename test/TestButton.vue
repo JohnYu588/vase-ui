@@ -1,40 +1,40 @@
 <template>
   <div class="app">
     <div class="row">
-      <mc-button>按钮</mc-button>
-      <mc-button type="primary">按钮</mc-button>
-      <mc-button type="success">按钮</mc-button>
-      <mc-button type="info">按钮</mc-button>
-      <mc-button type="warning">按钮</mc-button>
+      <vs-button>按钮</vs-button>
+      <vs-button type="primary">按钮</vs-button>
+      <vs-button type="success">按钮</vs-button>
+      <vs-button type="info">按钮</vs-button>
+      <vs-button type="warning">按钮</vs-button>
     </div>
     <div class="row">
-      <mc-button plain>按钮</mc-button>
-      <mc-button plain type="primary">按钮</mc-button>
-      <mc-button plain type="success">按钮</mc-button>
-      <mc-button plain type="info">按钮</mc-button>
-      <mc-button plain type="warning">按钮</mc-button>
+      <vs-button plain>按钮</vs-button>
+      <vs-button plain type="primary">按钮</vs-button>
+      <vs-button plain type="success">按钮</vs-button>
+      <vs-button plain type="info">按钮</vs-button>
+      <vs-button plain type="warning">按钮</vs-button>
     </div>
     <div class="row">
-      <mc-button round plain>按钮</mc-button>
-      <mc-button round plain type="primary">按钮</mc-button>
-      <mc-button round plain type="success">按钮</mc-button>
-      <mc-button round plain type="info">按钮</mc-button>
-      <mc-button round plain type="warning">按钮</mc-button>
+      <vs-button round plain>按钮</vs-button>
+      <vs-button round plain type="primary">按钮</vs-button>
+      <vs-button round plain type="success">按钮</vs-button>
+      <vs-button round plain type="info">按钮</vs-button>
+      <vs-button round plain type="warning">按钮</vs-button>
     </div>
     <div class="row">
-      <mc-button circle>OK</mc-button>
-      <mc-button circle type="primary">OK</mc-button>
-      <mc-button circle type="success">OK</mc-button>
-      <mc-button circle type="info">OK</mc-button>
-      <mc-button circle type="warning">OK</mc-button>
+      <vs-button circle>OK</vs-button>
+      <vs-button circle type="primary">OK</vs-button>
+      <vs-button circle type="success">OK</vs-button>
+      <vs-button circle type="info">OK</vs-button>
+      <vs-button circle type="warning">OK</vs-button>
     </div>
     <div class="row">
-      <mc-button plain>字体</mc-button>
-      <mc-button icon="mc-icon-check" circle plain type="primary"></mc-button>
-      <mc-button icon="mc-icon-message" circle plain type="success"></mc-button>
-      <mc-button icon="mc-icon-search" circle plain type="info"></mc-button>
-      <mc-button icon="mc-icon-star-off" plain type="warning"
-        >字体图标</mc-button
+      <vs-button plain>字体</vs-button>
+      <vs-button icon="vs-icon-check" circle plain type="primary"></vs-button>
+      <vs-button icon="vs-icon-message" circle plain type="success"></vs-button>
+      <vs-button icon="vs-icon-search" circle plain type="info"></vs-button>
+      <vs-button icon="vs-icon-star-off" plain type="warning"
+        >字体图标</vs-button
       >
     </div>
   </div>
@@ -64,7 +64,7 @@ export default {
 .row {
   padding: 10px 0;
 }
-.mc-button {
+.vs-button {
   margin-left: 10px;
 }
 </style>

@@ -1,5 +1,5 @@
 import Button from "./button";
-import VKeepAliveChain from "./keep-alive-chain";
+import KeepAlive from "./keep-alive";
 
 import "./fonts/font.scss";
 // 存储组件列表
@@ -16,16 +16,16 @@ const install = function(Vue, options = { key: "", router: {} }) {
       Vue.component(item.name, item);
     }
   });
-  Vue.use(VKeepAliveChain, { key, router });
+  Vue.use(KeepAlive, { key, router });
 };
 
 // 判断是否是直接引入文件
 if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
-export { Button, VKeepAliveChain };
+export { Button, KeepAlive };
 export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
-  version: "0.2.8",
+  version: "0.2.9",
   install
 };

@@ -52,7 +52,7 @@ const beforeEach = () => {
     next();
   });
 };
-const VKeepAliveChain = {
+const VsKeepAlive = {
   install(Vue, options = { key: "", router: "" }) {
     const { key = "cacheTo", router } = options;
 
@@ -63,14 +63,14 @@ const VKeepAliveChain = {
     }
 
     const component = {
-      name: "VKeepAliveChain",
+      name: "VsKeepAlive",
       functional: true,
       render(h, { children }) {
         return h("keep-alive", { props: { include: state.caches } }, children);
       }
     };
 
-    Vue.component("VKeepAliveChain", component);
+    Vue.component("VsKeepAlive", component);
   }
 };
-export default VKeepAliveChain;
+export default VsKeepAlive;

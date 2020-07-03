@@ -1,6 +1,6 @@
-import Button from "./src/button.vue";
+import VsButton from "./src/button.vue";
 // 为组件提供 install 安装方法，供按需引入
-Button.install = function(Vue) {
-  Vue.component(Button.name, Button);
+VsButton.install = function(Vue) {
+  Vue.component(VsButton.name, VsButton);
 };
-export default Button;
+export default VsButton;

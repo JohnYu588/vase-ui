@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <mc-button>按钮测试</mc-button>
+    <vs-button>按钮测试</vs-button>
   </div>
 </template>
 
 <script>
-import McButton from "./TestButton";
+import VsButton from "./TestButton";
 export default {
   name: "app",
   components: {
-    McButton
+    VsButton
   }
 };
 </script>
