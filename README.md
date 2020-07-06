@@ -7,7 +7,6 @@ This is an UI framework based on Vue. The inspiration comes from Vase
 ## demo
 
 :point_right: [https://JohnYu588.github.io/vase-ui/](https://JohnYu588.github.io/vase-ui/)</br>
-![avatar](https://user-gold-cdn.xitu.io/2019/5/14/16ab1f527248e169?imageslim)
 
 ## Usage
 
