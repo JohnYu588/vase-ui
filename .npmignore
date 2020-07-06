@@ -2,6 +2,8 @@
 test/
 packages/
 public/
+docs/
+node_modules/
 
 # 忽略指定文件
 vue.config.js

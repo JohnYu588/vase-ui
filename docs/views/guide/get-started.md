@@ -1,21 +1,8 @@
-# vase-ui
+---
+title: '快速上手'
+---
 
-## Introduction
-
-This is an UI framework based on Vue. The inspiration comes from Vase
-
-## demo
-
-:point_right: [https://JohnYu588.github.io/vase-ui/](https://JohnYu588.github.io/vase-ui/)</br>
-![avatar](https://user-gold-cdn.xitu.io/2019/5/14/16ab1f527248e169?imageslim)
-
-## Usage
-
-1. Install package [vase-ui]
-   ```sh
-   npm i -D vase-ui
-   ```
-2. Get Started
+# 快速上手
 
 ```js
 // 全局注册
@@ -39,3 +26,7 @@ Vue.use(Button).use(KeepAlive, { router });
 export default {};
 </script>
 ```
+
+<ClientOnly>
+  <!-- <sakura-img/> -->
+</ClientOnly>
