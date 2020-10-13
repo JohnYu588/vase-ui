@@ -33,9 +33,7 @@
       <vs-button icon="vs-icon-check" circle plain type="primary"></vs-button>
       <vs-button icon="vs-icon-message" circle plain type="success"></vs-button>
       <vs-button icon="vs-icon-search" circle plain type="info"></vs-button>
-      <vs-button icon="vs-icon-star-off" plain type="warning"
-        >字体图标</vs-button
-      >
+      <vs-button icon="vs-icon-star-off" plain type="warning">字体图标</vs-button>
     </div>
   </div>
 </template>
@@ -46,8 +44,8 @@ export default {
     jump(e) {
       console.log(e);
       alert(123);
-    }
-  }
+    },
+  },
 };
 </script>
 

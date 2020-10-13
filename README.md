@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is an UI framework based on Vue. The inspiration comes from Vase
+This is an UI framework based on Vue. The inspiration comes from Vase 移动端
 
 ## demo
 

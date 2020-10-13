@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <vs-button>按钮测试</vs-button>
+    <!-- <test-button>按钮测试</test-button> -->
+    <!-- <vs-water-full /> -->
+    <vs-uploader />
   </div>
 </template>
 
 <script>
-import VsButton from "./TestButton";
+// import TestButton from './TestButton';
+
 export default {
-  name: "app",
+  name: 'app',
   components: {
-    VsButton
-  }
+    // TestButton,
+  },
 };
 </script>
 

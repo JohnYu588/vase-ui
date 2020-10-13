@@ -1,6 +1,6 @@
 ---
 title: 'Basic 基础'
-sidebarDepth: 2
+sidebarDepth: 3
 ---
 
 ## Button 按钮
@@ -16,4 +16,10 @@ sidebarDepth: 2
 | icon-position | 图标在按钮的左右位置 | string|left, right  | - |
 | loading | 显示加载中图标 | boolean |- | false |
 
+</ClientOnly>
+
+## Uploader 拍照裁剪
+
+<ClientOnly>
+  <vs-uploader/>
 </ClientOnly>

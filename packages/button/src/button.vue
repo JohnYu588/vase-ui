@@ -47,7 +47,11 @@ export default {
     icon: {
       type: String,
       default: ""
-    }
+    },
+    buttonSize:{
+      type: String,
+      default: "default"
+    },
   },
   methods: {
     handleClick(e) {

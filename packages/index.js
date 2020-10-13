@@ -1,13 +1,15 @@
-import Button from "./button";
-import KeepAlive from "./keep-alive";
+import Button from './button';
+import KeepAlive from './keep-alive';
+import WaterFull from './waterFull';
+import Uploader from './uploader';
 
-import "./fonts/font.scss";
+import './fonts/font.scss';
 // 存储组件列表
-const components = [Button];
+const components = [Button, WaterFull, Uploader];
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
-const install = function(Vue, options = { key: "", router: {} }) {
-  const { key = "cacheTo", router } = options;
+const install = function(Vue, options = { key: '', router: {} }) {
+  const { key = 'cacheTo', router } = options;
   // 遍历注册全局组件
   components.forEach(function(item) {
     if (item.install) {
@@ -18,14 +20,13 @@ const install = function(Vue, options = { key: "", router: {} }) {
   });
   Vue.use(KeepAlive, { key, router });
 };
-
 // 判断是否是直接引入文件
-if (typeof window !== "undefined" && window.Vue) {
+if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
-export { Button, KeepAlive };
+export { Button, KeepAlive, WaterFull, Uploader };
 export default {
   // 导出的对象必须具有 install，才能被 Vue.use() 方法安装
-  version: "0.3.4",
-  install
+  version: '0.3.4',
+  install,
 };
